@@ -1,35 +1,78 @@
 public class Mario {
 
-    String nacionalidade;
-    String corOlhos;
-    String tamanho;
-    String corCabelo;
-    String poderes;
 
-    void caracetristicasFisicas () {
-    System.out.println("Mario tem os cabelos "+this.corCabelo+" ele é "+this.nacionalidade+" de estatura "+this.tamanho+" e tem os olhos "+this.corOlhos+".");
+
+    private String nacionalidade;
+    private String corOlhos;
+    private String tamanho;
+    private String corCabelo;
+    private String poderes;
+    private int stamina;
+    private String nome;
+    private int idade;
+    private double altura;
+
+    public Mario(){
+        this.nome = "Mario Bros";
+        this.idade = 40;
+        this.altura = 1.50;
+        this.stamina = 100;
+    }
+
+    public Mario(String nome, int idade, double altura) {
+        this.nome = nome;
+        this.idade = idade;
+        this.altura = altura;
+        this.stamina = 100;
+    }
+
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
+
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
+
+    public int getStamina() {
+        return stamina;
+    }
+
+    public void setStamina(int stamina) {
+        this.stamina = stamina;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public void superMario () {
+        System.out.println("Nome: "+this.nome+", Idade: "+this.idade+", Altura: "+this.altura+", Stamina: "+this.stamina);
 
     }
 
-    void superPoderes (){
-    System.out.println(poderes);
+    public void superPoderes (){
+        System.out.println("Poder dar grandes saltos, mata inimigos com o peso do seu corpo, pode até voar");
     }
 }
 
-//fim class
-//inicio main
-
-public class Main {
-    public static void main(String[] args) {
-        Mario mario = new Mario();
-        mario.nacionalidade = "Italiano";
-        mario.corCabelo = "Castanho";
-        mario.corOlhos ="Azuis";
-        mario.tamanho ="Baixa";
-        mario.poderes = "Ele pode voar, pula alto, derruba objeto com o peso do seu corpo, etc...";
-        mario.caracetristicasFisicas();
-        mario.superPoderes();
-
-
-    }
-}
