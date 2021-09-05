@@ -95,3 +95,43 @@ public class MarioAula5 {
     }
 
 }
+
+//fim class - inicio main
+
+public class MarioAula5Main {
+    public static void main(String[] args) {
+
+        MarioAula5 m1 = new MarioAula5();
+        MarioAula5 m2 = new MarioAula5();
+
+        m1.setStamina(20);
+
+        m1.crescer();
+
+        m1.perderStamina();
+        m1.perderStamina();
+        m1.perderStamina();
+
+
+        m2.ganharStamina();
+        m2.ganharStamina();
+        m2.ganharStamina();
+
+        m1.superMario();
+        m1.superPoderes();
+
+        m2.superMario();
+        m2.superPoderes();
+
+        System.out.println();
+
+
+    }
+}
+
+// resposta no console
+
+Nome: Mario Bros, Idade: 40, Altura: 3.0, Stamina: 0
+Poder dar grandes saltos, mata inimigos com o peso do seu corpo, pode até voar
+Nome: Mario Bros, Idade: 40, Altura: 1.5, Stamina: 100
+Poder dar grandes saltos, mata inimigos com o peso do seu corpo, pode até voar
