@@ -118,7 +118,7 @@ public class Personagem implements Controlador {
     }
 
     public void superMario () {
-            System.out.println("Nome: "+this.nome+", Idade: "+this.idade+" anos, Altura: "+this.altura+"m, Stamina: "+this.stamina+" Quantidade de vidas: "+this.vidas+" Qtd de Moedas: "+moedas+" Pode saltar "+this.saltar+"m.");
+            System.out.println("Nome: "+this.nome+", Idade: "+this.idade+" anos, Altura: "+this.altura+"m, Stamina: "+this.stamina+" Quantidade de vidas: "+this.vidas+" Qtd de Moedas: "+moedas+" Pode saltar "+this.saltar+"m");
 
         }
 
@@ -149,3 +149,9 @@ public class MarioEncapsulamento {
         }
     }
 
+// Resposta no console
+
+Nome: Mario, Idade: 40 anos, Altura: 1.5m, Stamina: 100 Quantidade de vidas: 1 Qtd de Moedas: 0 Pode saltar 2.25m
+Poder dar grandes saltos, mata inimigos com o peso do seu corpo, pode até voar
+Nome: Luigui, Idade: 35 anos, Altura: 1.75m, Stamina: 100 Quantidade de vidas: 1 Qtd de Moedas: 0 Pode saltar 3.5m
+Poder dar grandes saltos, mata inimigos com o peso do seu corpo, pode até voar
