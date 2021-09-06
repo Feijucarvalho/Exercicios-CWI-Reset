@@ -122,3 +122,12 @@ public class MarioAula6 implements Controlador {
 
 }
 
+// fim da classe - Inicio Iterface
+
+public interface Controlador {
+    public abstract void revigorar();
+    public abstract void morrer();
+    public abstract void colelaMoedas();
+
+}
+
