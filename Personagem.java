@@ -1,4 +1,4 @@
-public class Personagem implements Controlador {
+public class Personagem {
 
 
 
@@ -31,9 +31,9 @@ public class Personagem implements Controlador {
     }
 
     public void setSaltar() {
-        if (nome=="Mario"){
+        if (nome.equals("Mario")){
             this.saltar=1.5*this.altura;
-        }else if (nome == "Luigui"){
+        }else if (nome.equals("Luigui")){
             this.saltar = 2*this.altura;
         }
     }
@@ -71,7 +71,26 @@ public class Personagem implements Controlador {
         this.altura = altura;
     }
 
-        public void perderStamina(){
+    public int getMoedas() {
+        return moedas;
+    }
+
+    public void setMoedas(int moedas) {
+        this.moedas = moedas;
+    }
+
+    public int getVidas() {
+        return vidas;
+    }
+
+    public void setVidas(int vidas) {
+        this.vidas = vidas;
+    }
+
+
+
+
+    public void perderStamina(){
             this.stamina = this.stamina - 10;
             if (this.stamina < 0){
                 this.stamina = 0;
@@ -91,7 +110,6 @@ public class Personagem implements Controlador {
 
         }
 
-    @Override
     public void morrer() {
             this.setStamina(0);
             this.vidas = this.vidas - 1;
@@ -102,23 +120,22 @@ public class Personagem implements Controlador {
             }
 
     }
-    @Override
+
     public void revigorar() {
             this.stamina = 100;
 
     }
 
-    @Override
-    public void colelaMoedas() {
-            this.moedas = this.moedas + 1;
-            if (this.moedas % 10 == 0){
-                this.vidas = this.vidas + 1;
-            }
+    public void coletaMoedas() {
+        this.moedas++;
 
+        if (this.moedas % 10 == 0) {
+            this.vidas++;
+        }
     }
 
     public void superMario () {
-            System.out.println("Nome: "+this.nome+", Idade: "+this.idade+" anos, Altura: "+this.altura+"m, Stamina: "+this.stamina+" Quantidade de vidas: "+this.vidas+" Qtd de Moedas: "+moedas+" Pode saltar "+this.saltar+"m");
+            System.out.println("Nome: "+this.nome+", Idade: "+this.idade+" anos, Altura: "+this.altura+"m, Stamina: "+this.stamina+" Quantidade de vidas: "+this.vidas+" Qtd de Moedas: "+moedas+" Pode saltar "+this.saltar+"m.");
 
         }
 
@@ -129,29 +146,3 @@ public class Personagem implements Controlador {
 
 }
 
-// fim classe Personagem - Inicio classe main
-
-public class MarioEncapsulamento {
-        public static void main(String[] args) {
-
-            Personagem mario = new Personagem("Mario",40,1.5);
-            Personagem luigui = new Personagem("Luigui",35,1.75);
-
-            mario.superMario();
-            mario.superPoderes();
-
-            luigui.superMario();
-            luigui.superPoderes();
-
-            System.out.println();
-
-
-        }
-    }
-
-// Resposta no console
-
-Nome: Mario, Idade: 40 anos, Altura: 1.5m, Stamina: 100 Quantidade de vidas: 1 Qtd de Moedas: 0 Pode saltar 2.25m
-Poder dar grandes saltos, mata inimigos com o peso do seu corpo, pode até voar
-Nome: Luigui, Idade: 35 anos, Altura: 1.75m, Stamina: 100 Quantidade de vidas: 1 Qtd de Moedas: 0 Pode saltar 3.5m
-Poder dar grandes saltos, mata inimigos com o peso do seu corpo, pode até voar
