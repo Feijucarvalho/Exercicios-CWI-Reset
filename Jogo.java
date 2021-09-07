@@ -60,5 +60,30 @@ public class Jogo {
         }
     }
 
+// fim da classe jogo - Inicio Classe main
 
+public class MarioEncapsulamento {
+        public static void main(String[] args) {
 
+            Personagem mario = new Personagem("Mario",40,1.5);
+            Personagem luigui = new Personagem("Luigui",35,1.75);
+
+            Jogo SM = new Jogo(mario,luigui);
+            SM.jogar();
+
+// Resposta no console
+            
+            ----------------------------------------------
+Os dados do primeiro jogador sao: Mario
+Nome Mario
+Altura 1.5
+Idade 40
+Quantidade de moedas coletadas1
+Quantidade de vidas1
+----------------------------------------------
+Os dados do primeiro jogador sao: Luigui
+Nome Luigui
+Altura 1.75
+Idade 35
+Quantidade de moedas coletadas19
+Quantidade de vidas2
