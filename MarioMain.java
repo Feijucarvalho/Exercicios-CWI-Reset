@@ -227,3 +227,12 @@ public class Yoshi extends Personagem {
     }
 
 }
+
+// Fim da classe Yoshi - Inicio da resposta no console
+
+Mario esta montado no Yoshi
+Luigui está voando
+Yoshi comeu 5 frutas
+A velovidade do Yoshi é de 40
+        
+        //Fim
