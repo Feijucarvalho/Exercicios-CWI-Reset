@@ -173,3 +173,13 @@ public class Mario extends Personagem{
     }
 
 }
+
+// Fim da classe Mario -  Inicio da classe Luigui
+
+  
+public class Luigui extends Personagem{
+
+    public void voar(){
+        System.out.println("Luigui está voando");
+    }
+}
