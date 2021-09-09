@@ -312,3 +312,13 @@ public class Yoshi extends Personagem {
 // fim da classe Yoshi - Inicio da resposta no console
 
 
+A altura atual é do Mario é de: 2.25
+A altura atual é do Luigui é de: 2.975
+A altura atual é do Yoshi é de: 1.32
+Mario esta pulando 2.25
+Luigui esta pulando 2.55
+Yoshi esta pulando 1.7999999999999998
+Mario está pulando 50% mais alto que obstaculo a sua frente
+Luigui está pulando 50% mais alto que obstaculo a sua frente
+Yoshi está pulando 50% mais alto que obstaculo a sua frente
+
